@@ -13,7 +13,7 @@ var events = require('./routes/events');
 var search = require('./routes/search');
 
 var config = new(require('./config.js'))();
-var Datastore = require('nedb-core')
+var Datastore = require('nedb')
 var db = new Datastore({ filename: './data.db', autoload: true });
 
 db.ensureIndex({ fieldName: 'balance' }, function (err) {

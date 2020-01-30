@@ -62,3 +62,5 @@ data.db
 
 # Configuration file
 config.js
+
+yarn.lock

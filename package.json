@@ -1,5 +1,5 @@
 {
-  "name": "erc20-explorer",
+  "name": "vndc-explorer",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "express": "~4.14.1",
     "moment": "^2.18.1",
     "morgan": "~1.7.0",
+    "nedb": "^1.8.0",
     "nedb-core": "^3.0.6",
     "pug": "~2.0.0-beta10",
     "serve-favicon": "~2.3.2",
