@@ -26,8 +26,8 @@ var exporter = function(config, db) {
     });
     
     if (log.event === "Transfer") {
-      self.exportBalance(log.args._from);
-      self.exportBalance(log.args._to);
+      self.exportBalance(log.args.from);
+      self.exportBalance(log.args.to);
     }
     if (log.event === "Approval") {
       self.exportBalance(log.args._owner);
@@ -46,8 +46,8 @@ var exporter = function(config, db) {
     
     logs.forEach(function(log) {
       if (log.event === "Transfer") {
-        accounts[log.args._from] = log.args._from;
-        accounts[log.args._to] = log.args._to;
+        accounts[log.args.from] = log.args.from;
+        accounts[log.args.to] = log.args.to;
       }
       
       if (log.event === "Approval") {
