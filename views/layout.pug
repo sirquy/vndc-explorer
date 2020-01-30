@@ -14,7 +14,22 @@ html(lang="en")
     title VNDC Explorer
     
     link(href=config.bootstrapUrl, rel="stylesheet", crossorigin="anonymous")    
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    style.
+      body {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+      }
+      @media (max-width: 978px) {
+      .container {
+      padding:5;
+      margin:0;
+      }
+      }
+      a {
+      color: #00B7FF;
+      }
+
     
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
