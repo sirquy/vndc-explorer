@@ -28,9 +28,9 @@ db.ensureIndex({ fieldName: 'timestamp' }, function (err) {
   }
 });
 
-db.ensureIndex({ fieldName: 'args._from' }, function (err) {
+db.ensureIndex({ fieldName: 'args.from' }, function (err) {
   if (err) {
-    console.log("Error creating _from db index:", err);
+    console.log("Error creating from db index:", err);
   }
 });
 
