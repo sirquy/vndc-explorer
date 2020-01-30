@@ -6,8 +6,13 @@ block content
       h1 #{config.tokenName}
   
   .row
-    .col-md-12
+    .col-md-10
       h3 Recent transactions
+    .col-md-1
+      if offset - stepSize >= 0
+        a.btn.btn-default(href="/events/" + (offset - stepSize)) Previous
+    .col-md-1
+        a.btn.btn-default(href="/events/" + (offset + stepSize)) Next
   .row
     .col-md-12
       .table-responsive
