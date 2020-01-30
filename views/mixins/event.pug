@@ -7,7 +7,7 @@ mixin event_row(event)
         a(href="/account/" + event.args.from) #{event.args.from}
       td
         a(href="/account/" + event.args.to) #{event.args.to}
-      td #{tokenformatter.format(event.args.value)}
+      td #{tokenformatter.format(event.args.value.c)}
       td #{moment(event.timestamp * 1000).fromNow()}
   if event.event === "Approval"
     tr
