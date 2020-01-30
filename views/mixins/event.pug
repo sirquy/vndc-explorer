@@ -17,5 +17,5 @@ mixin event_row(event)
         a(href="/account/" + event.args._owner) #{event.args._owner}
       td
         a(href="/account/" + event.args._spender) #{event.args._spender}
-      td #{tokenformatter.format(event.args.value)}
+      td #{tokenformatter.format(event.args.value.c)}
       td #{moment(event.timestamp * 1000).fromNow()}
