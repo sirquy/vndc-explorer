@@ -34,7 +34,7 @@ db.ensureIndex({ fieldName: 'args.from' }, function (err) {
   }
 });
 
-db.ensureIndex({ fieldName: 'args._to' }, function (err) {
+db.ensureIndex({ fieldName: 'args.to' }, function (err) {
   if (err) {
     console.log("Error creating _to db index:", err);
   }
