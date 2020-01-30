@@ -84,8 +84,8 @@ var exporter = function(config, db) {
       
       log.timestamp = block.timestamp;
       
-      if (log.args && log.args._value) {
-        log.args._value = log.args._value.toNumber();
+      if (log.args && log.args.value) {
+        log.args.value = log.args.value.toNumber();
       }
       
       self.db.insert(log, function(err, newLogs) {
